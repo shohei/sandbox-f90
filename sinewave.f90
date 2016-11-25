@@ -1,13 +1,16 @@
 program sinewave
+
 implicit none
 real,dimension(8)::x(10,10),y
 integer i,j
 
-do j=1,10
-  do i=1,10
-    x(i,j) = i+j    
-    write(*,*) x(i,j)
-  end do
+open(17, file='mydata.dat', status='replace')
+
+do i=1,100
+  x(i,j) = i    
+  y(i,j) = 
+  write(*,*) x(i,j)
 end do
+
 
 end program 
